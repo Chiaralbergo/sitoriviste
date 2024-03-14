@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Example</title>
+<style>
+  /* Stili CSS per il body */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  /* Stili CSS per la griglia e le immagini */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 colonne di 100px ciascuna */
+    grid-template-rows: repeat(3, 100px); /* 3 righe di 100px ciascuna */
+    width: 60%; /* Dimensione della griglia al 60% dello schermo */
+    gap: 0px; /* Spazio tra i quadrati */
+  }
+
+  .item-box {
+    border: 0px solid #0f0a0a;
+    overflow: hidden; /* Nasconde l'eventuale overflow delle immagini */
+    position: relative;
+  }
+
+  .piece {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .puzzle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zoom dell'immagine per riempire completamente il quadrato */
+    transition: transform 0.3s ease; /* Aggiungiamo una transizione per rendere l'animazione più fluida */
+  }
+
+   /* Aggiungiamo uno stile per l'animazione quando l'utente passa il mouse sopra l'immagine */
+   .puzzle:hover img {
+    transform: scale(1.2); /* Aumentiamo leggermente le dimensioni dell'immagine quando il mouse è sopra di essa */
+  }
+</style>
+</head>
+<body>
+  <!-- Griglia di immagini -->
+  <div class="grid"> <!-- Inizia il contenitore della griglia -->
+    <!-- Prima riga -->
+    <div class="item-box"> <!-- Inizia il box dell'elemento -->
+      <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+        <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+          <img src="images/image1.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+        </div>
+      </div>
+    </div>
+    <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image2.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image3.JPG" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image4.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image5.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image6.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image7.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image8.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+      <div class="item-box"> <!-- Inizia il box dell'elemento -->
+        <div class="piece"> <!-- Inizia il pezzo dell'immagine -->
+          <div class="puzzle"> <!-- Inizia l'area di ritaglio -->
+            <img src="images/image9.jpg" alt="Image 1"> <!-- Inserisce l'immagine -->
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <!-- Aggiungi uno script JavaScript -->
+<script>
+</body>
+</html>
+
+  
